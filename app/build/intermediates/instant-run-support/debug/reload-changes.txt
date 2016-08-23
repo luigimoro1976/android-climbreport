@@ -1,0 +1,3 @@
+CHANGED,/home/javaknight/.myHome/myHome/Projects/AndroidStudio/ClimbingReport/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/luigimoro/climbingreport/AddRouteActivity$1$override.class
+CHANGED,/home/javaknight/.myHome/myHome/Projects/AndroidStudio/ClimbingReport/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,/home/javaknight/.myHome/myHome/Projects/AndroidStudio/ClimbingReport/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/luigimoro/climbingreport/AddRouteActivity$override.class

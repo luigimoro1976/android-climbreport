@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="vertical"
+    tools:context="com.luigimoro.climbingreport.AddPitchActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradients"
+        android:focusable="false"
+        android:text="@string/pitch_form_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorActivityTitle"
+        android:textSize="20sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/pitch_form_description_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/pitch_form_description_toggle"
+                android:inputType="textMultiLine"
+                android:lines="4" />
+
+
+            <EditText
+                android:id="@+id/pitch_form_belay_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pitch_form_belay_toggle"
+                android:inputType="textMultiLine"
+                android:lines="2" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:useDefaultMargins="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@+id/pitch_form_hours_id"
+                    android:text="@string/pitch_form_hours_label" />
+
+                <EditText
+                    android:id="@+id/pitch_form_hours_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ems="2"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:labelFor="@+id/pitch_form_minutes_id"
+                    android:text="@string/pitch_form_minutes_label" />
+
+                <EditText
+                    android:id="@+id/pitch_form_minutes_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ems="2"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@+id/pitch_form_pitons_id"
+                    android:text="@string/pitch_form_pitons_label" />
+
+                <EditText
+                    android:id="@+id/pitch_form_pitons_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ems="2"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:labelFor="@+id/pitch_form_spits_id"
+                    android:text="@string/pitch_form_spits_label" />
+
+                <EditText
+                    android:id="@+id/pitch_form_spits_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ems="2"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:labelFor="@+id/protection_level_id"
+                    android:text="@string/pitch_form_protection_level_label" />
+
+                <Spinner
+                    android:id="@+id/protection_level_id"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:layout_marginLeft="10dp"
+                    android:entries="@array/protection_level_values"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:labelFor="@+id/pitch_form_difficulty_id"
+                    android:text="@string/pitch_form_difficulty_label" />
+
+                <Spinner
+                    android:id="@+id/pitch_form_difficulty_id"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:layout_marginLeft="10dp"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:labelFor="@+id/pitch_form_rock_quality_id"
+                    android:text="@string/pitch_form_rock_quality_label" />
+
+                <Spinner
+                    android:id="@+id/pitch_form_rock_quality_id"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:layout_marginLeft="10dp"
+                    android:entries="@array/rock_quality_values"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_columnSpan="2"
+                    android:labelFor="@+id/pitch_form_lentgh_id"
+                    android:text="@string/pitch_form_length_label" />
+
+                <EditText
+                    android:id="@+id/pitch_form_lentgh_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ems="2"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:padding="3dp" />
+            </GridLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:onClick="savePitchInfo"
+                android:text="Salva" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

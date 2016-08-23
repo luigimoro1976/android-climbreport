@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context=".AddRouteActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradients"
+        android:focusable="false"
+        android:text="@string/route_form_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorActivityTitle"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/route_form_name_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/route_form_description_toggle"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@+id/route_form_route_type_id"
+                    android:text="@string/route_form_route_type_label" />
+
+                <Spinner
+                    android:id="@+id/route_form_route_type_id"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:entries="@array/route_type_values"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/route_form_mountain_area_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/route_form_mountain_area_toggle"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/route_form_closest_village_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/route_form_start_village_toggle"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/route_form_closest_refugee_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/route_form_closest_refugee_toggle"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@+id/route_form_route_difficulty_id"
+                    android:minWidth="150dp"
+                    android:text="@string/route_form_route_difficulty_label" />
+
+                <Spinner
+                    android:id="@+id/route_form_route_difficulty_id"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:spinnerMode="dropdown"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:labelFor="@+id/route_form_route_mand_difficulty_id"
+                    android:minWidth="150dp"
+                    android:text="@string/route_form_route_mand_difficulty_label" />
+
+                <Spinner
+                    android:id="@+id/route_form_route_mand_difficulty_id"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:entries="@array/classic_route_difficulty_values"
+                    android:spinnerMode="dropdown" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/route_form_route_start_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:hint="@string/route_form_route_start_toggle"
+                android:inputType="textMultiLine"
+                android:lines="4" />
+
+            <LinearLayout
+                android:id="@+id/route_form_pitch_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:onClick="addPitch"
+                android:text="@string/route_form_add_pitch_button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:text="Salva" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

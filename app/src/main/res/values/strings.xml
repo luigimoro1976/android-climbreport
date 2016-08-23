@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Climbing Report</string>
+    <string name="edit_message">Write here</string>
+    <string name="send_button">Send</string>
+    <string name="action_setting">Settings</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <!--Route description-->
+
+
+    <string name="route_form_title">Aggiungi informazioni sulla via</string>
+    <string name="route_form_description_toggle">Nome della via</string>
+    <string name="route_form_route_type_label">Tipo via</string>
+    <string name="route_form_mountain_area_toggle">Area montuosa</string>
+    <string name="route_form_start_village_toggle">Località di partenza</string>
+    <string name="route_form_closest_refugee_toggle">Rifugio di appoggio</string>
+    <string name="route_form_route_difficulty_label">Difficoltà</string>
+    <string name="route_form_route_mand_difficulty_label">Difficoltà abbligatoria</string>
+    <string name="route_form_route_start_toggle">Descrivi l\'attacco alla via</string>
+    <string name="route_form_add_pitch_button">Aggiungi tiro</string>
+
+    <!-- Pitch desctiption-->
+    <string name="pitch_form_title">Compila le informazioni sul tiro</string>
+    <string name="pitch_form_description_toggle">Descrivi il tiro</string>
+    <string name="pitch_form_belay_toggle">Descrivi la sosta</string>
+    <string name="pitch_form_protection_level_label">Proteggibilità</string>
+    <string name="pitch_form_spits_label">N° Spit</string>
+    <string name="pitch_form_minutes_label">Minuti</string>
+    <string name="pitch_form_pitons_label">Chiodi</string>
+    <string name="pitch_form_hours_label">Ore</string>
+    <string name="pitch_form_difficulty_label">Difficoltà</string>
+    <string name="pitch_form_rock_quality_label">Qualità roccia</string>
+    <string name="pitch_form_length_label">Lunghezza del tiro</string>
+
+
+    <string-array name="route_type_values">
+        <item>Classica</item>
+        <item>Sportiva</item>
+    </string-array>
+
+    <string-array name="classic_route_difficulty_values">
+        <item>III</item>
+        <item>III+</item>
+        <item>IV-</item>
+        <item>IV</item>
+        <item>IV+</item>
+        <item>V-</item>
+        <item>V</item>
+        <item>V+</item>
+        <item>VI-</item>
+        <item>VI</item>
+        <item>VI+-</item>
+        <item>VII-</item>
+        <item>VII</item>
+        <item>VII+</item>
+        <item>VIII-</item>
+        <item>VIII</item>
+    </string-array>
+
+    <string-array name="modern_route_difficulty_values">
+        <item>4a</item>
+        <item>4b</item>
+        <item>4c</item>
+        <item>5a</item>
+        <item>5b</item>
+        <item>5c</item>
+        <item>6a</item>
+        <item>6b</item>
+        <item>6c</item>
+        <item>7a</item>
+    </string-array>
+
+    <string-array name="rock_quality_values">
+        <item>Ottima</item>
+        <item>Buona</item>
+        <item>Discreta</item>
+        <item>Sufficiente</item>
+        <item>Scarsa</item>
+        <item>Pessima</item>
+    </string-array>
+
+    <string-array name="protection_level_values">
+        <item>R1</item>
+        <item>R2</item>
+        <item>R3</item>
+        <item>R4</item>
+    </string-array>
+</resources>

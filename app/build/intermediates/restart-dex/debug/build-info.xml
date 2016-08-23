@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86_64,x86"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="30907281332852"
+    token="-7116268150706252187" >
+
+    <task
+        name="javac"
+        duration="164" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="22" />
+    <task
+        name="verifier"
+        duration="2" />
+
+    <artifact
+        location="/home/javaknight/.myHome/myHome/Projects/AndroidStudio/ClimbingReport/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+        type="DEX" />
+
+    <build timestamp="28849143323021" >
+        <artifact
+            location="/home/javaknight/.myHome/myHome/Projects/AndroidStudio/ClimbingReport/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="30279090858835" >
+        <artifact
+            location="/home/javaknight/.myHome/myHome/Projects/AndroidStudio/ClimbingReport/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="30907281332852" >
+        <artifact
+            location="/home/javaknight/.myHome/myHome/Projects/AndroidStudio/ClimbingReport/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>
